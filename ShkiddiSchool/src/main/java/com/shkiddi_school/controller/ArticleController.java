@@ -3,6 +3,7 @@ package com.shkiddi_school.controller;
 
 import com.shkiddi_school.domain.Article;
 import com.shkiddi_school.domain.PhotoArticle;
+import com.shkiddi_school.repos.PhotoArticleRepo;
 import com.shkiddi_school.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,6 +24,8 @@ public class ArticleController {
 
     @Autowired
     ArticleService articleService;
+    @Autowired
+    PhotoArticleRepo paRepo;
 
     @Value("${upload.path}")
     private String uploadPath;
@@ -72,8 +75,9 @@ public class ArticleController {
             photoArticle.setNumber(article.getPhotoArticles().size() + 1);
             article.getPhotoArticles().add(photoArticle);
 
+            paRepo.save(photoArticle);
+            article.addPhoto(photoArticle);
         }
-
 
         return "articleEdit";
     }

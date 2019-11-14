@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -17,7 +18,10 @@ public class Article {
     private long id;
     private String text;
     private String title;
-    @ElementCollection(targetClass = PhotoArticle.class, fetch = FetchType.EAGER)
+    @OneToMany
+    private Set<PhotoArticle> photoArticles;
+    public void addPhoto(PhotoArticle photoArticle){
+        this.photoArticles.add(photoArticle);
+    }
 
-    private List<PhotoArticle> photoArticles;
 }
