@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55dd18ee-bb3a-4884-a9cb-501177f9dc4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/articleEdit.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/articleList.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shkiddiJavaSchool/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/PhotoArticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/photoArticle/298c4b97-e782-4db8-80b0-d9321644c268.pz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/photoArticle/42b03d57-8b85-4a83-9b00-a731986dcc01.Screenshot from 2019-10-18 10-56-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/photoArticle/b0be7a13-46ad-4a85-8388-1b01fe56be95.pz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/photoArticle/d70c1c00-3f64-4b9d-adca-bf329e11c9ff.pz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/photoArticle/e11fde25-0607-4832-ab3e-fa13e503a1da.pz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/photoArticle/fdf98697-20d0-4052-a6f9-6ea5e189c9fd.pz.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShkiddiSchool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/ArticleRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/repos/ArticleRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/articleEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/articleEdit.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shkiddiJavaSchool" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,7 +82,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -139,6 +143,12 @@
       <workItem from="1572891088576" duration="1640000" />
       <workItem from="1572963896850" duration="5588000" />
       <workItem from="1573497595944" duration="817000" />
+      <workItem from="1573570154097" duration="6712000" />
+      <workItem from="1573641470202" duration="285000" />
+      <workItem from="1573641943400" duration="2613000" />
+      <workItem from="1573647509651" duration="634000" />
+      <workItem from="1573653822714" duration="5796000" />
+      <workItem from="1573667416075" duration="3276000" />
     </task>
     <servers />
   </component>
@@ -150,7 +160,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
