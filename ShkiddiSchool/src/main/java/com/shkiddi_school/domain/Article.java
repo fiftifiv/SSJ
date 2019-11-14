@@ -5,14 +5,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.regex.Pattern;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @Entity
 public class Article {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -20,8 +22,32 @@ public class Article {
     private String title;
     @OneToMany
     private Set<PhotoArticle> photoArticles;
-    public void addPhoto(PhotoArticle photoArticle){
+
+    public void addPhoto(PhotoArticle photoArticle) {
         this.photoArticles.add(photoArticle);
     }
 
+    public String getTextHTML() {
+        String s = "<img src=\"$\" class=\"card-img\" alt=\"Responsive image\">";
+        System.out.println(text);
+String result = text;
+        System.out.println(result);
+        String pattern = "\\{#*\b#}";
+
+        if (Pattern.matches(pattern, text)) {
+            for ( PhotoArticle photo:
+                 photoArticles) {
+                String p = "\\{#" + photo.getNumber() + "#}";
+                if (Pattern.matches(p, text)) {
+                    result=(text.replaceAll(p,"llllllllll"));
+//                    s.replaceAll("\\$", "\\img\\" + photo.getName()))
+                }
+            }
+
+
+        }
+        result =  text.replaceAll("\n", "<br>");
+        System.out.println(result);
+        return result;
+    }
 }

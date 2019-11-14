@@ -39,7 +39,6 @@ public class ArticleController {
     @GetMapping("{article}")
     public String editArticle(@PathVariable Article article, Model model) {
         model.addAttribute("article", article);
-
         return "articleEdit";
     }
 
@@ -85,6 +84,7 @@ public class ArticleController {
     @GetMapping("add")
     public String addArticle(@RequestParam("title") String title, Model model) {
         articleService.addArticle(title);
+
         model.addAttribute("articles", articleService.getAllAtricle());
         return "articleList";
     }

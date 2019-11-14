@@ -8,8 +8,10 @@
     </#list>
 
 
-    <div><h1>${article.getTitle()!}</h1></div>
-    <div><h2>${article.getText()!}</h2></div>
+    <div align="CENTER"><h1>${article.getTitle()!}</h1></div>
+    <div><h4>${article.getTextHTML()!}</h4></div>
+
+
 <#--    article text and title-->
 
 </@c.page>
