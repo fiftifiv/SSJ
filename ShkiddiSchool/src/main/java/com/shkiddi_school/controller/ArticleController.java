@@ -60,10 +60,10 @@ public class ArticleController {
 
             String uuidFile = UUID.randomUUID().toString();
             String resultFilename = uuidFile + "." + file.getOriginalFilename();
-            System.out.println(resultFilename);
+
 
             try {
-                System.out.println("copy");
+
                 file.transferTo(new File(uploadDir+"/"+resultFilename));
             } catch (IOException e) {
                 e.printStackTrace();

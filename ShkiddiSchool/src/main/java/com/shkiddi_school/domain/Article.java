@@ -29,25 +29,22 @@ public class Article {
 
     public String getTextHTML() {
         String s = "<img src=\"$\" class=\"card-img\" alt=\"Responsive image\">";
-        System.out.println(text);
-String result = text;
-        System.out.println(result);
+        String result = text;
         String pattern = "\\{#*\b#}";
 
         if (Pattern.matches(pattern, text)) {
-            for ( PhotoArticle photo:
-                 photoArticles) {
+            for (PhotoArticle photo :
+                    photoArticles) {
                 String p = "\\{#" + photo.getNumber() + "#}";
                 if (Pattern.matches(p, text)) {
-                    result=(text.replaceAll(p,"llllllllll"));
+                    result = (text.replaceAll(p, "llllllllll"));
 //                    s.replaceAll("\\$", "\\img\\" + photo.getName()))
                 }
             }
 
 
         }
-        result =  text.replaceAll("\n", "<br>");
-        System.out.println(result);
+        result = text.replaceAll("\n", "<br>");
         return result;
     }
 }
