@@ -9,7 +9,7 @@
 
 
     <div align="CENTER"><h1>${article.getTitle()!}</h1></div>
-    <div><h4>${article.getTextHTML()!}</h4></div>
+    <div><h4>${article.getTextHTML()!}</h4> </div>
 
 
 <#--    article text and title-->

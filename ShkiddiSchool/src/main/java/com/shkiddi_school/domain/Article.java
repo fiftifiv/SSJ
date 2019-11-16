@@ -42,7 +42,6 @@ public class Article {
                 }
             }
 
-
         }
         result = text.replaceAll("\n", "<br>");
         return result;

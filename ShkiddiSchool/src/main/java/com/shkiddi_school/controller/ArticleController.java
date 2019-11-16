@@ -3,6 +3,7 @@ package com.shkiddi_school.controller;
 
 import com.shkiddi_school.domain.Article;
 import com.shkiddi_school.domain.PhotoArticle;
+import com.shkiddi_school.handler.HandlerTextHTML;
 import com.shkiddi_school.repos.PhotoArticleRepo;
 import com.shkiddi_school.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,8 @@ public class ArticleController {
     ArticleService articleService;
     @Autowired
     PhotoArticleRepo paRepo;
+    @Autowired
+    HandlerTextHTML handlerTextHTML;
 
     @Value("${upload.path}")
     private String uploadPath;
@@ -64,7 +67,7 @@ public class ArticleController {
 
             try {
 
-                file.transferTo(new File(uploadDir+"/"+resultFilename));
+                file.transferTo(new File(uploadDir + "/" + resultFilename));
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -102,8 +105,9 @@ public class ArticleController {
         article.setTitle(title);
         article.setText(text);
         articleService.saveArticle(article);
-        model.addAttribute("article", article);
+        model.addAttribute("article", handlerTextHTML.procesArticleText(article));
         model.addAttribute("articles", articleService.getAllAtricle());
+
 
         return "greeting";
     }

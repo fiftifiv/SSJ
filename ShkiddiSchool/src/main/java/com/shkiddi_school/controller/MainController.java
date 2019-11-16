@@ -3,6 +3,8 @@ package com.shkiddi_school.controller;
 import com.shkiddi_school.domain.Article;
 import com.shkiddi_school.domain.Message;
 import com.shkiddi_school.domain.User;
+import com.shkiddi_school.handler.HandlerText;
+import com.shkiddi_school.handler.HandlerTextHTML;
 import com.shkiddi_school.repos.ArticleRepo;
 import com.shkiddi_school.repos.MessageRepo;
 import com.sun.org.apache.xpath.internal.operations.Mod;
@@ -25,19 +27,22 @@ public class MainController {
     @Autowired
     private ArticleRepo articleRepo;
 
+    @Autowired
+    private HandlerTextHTML handlerTextHTML;
+
     @GetMapping("/")
     public String greeting(Map<String, Object> model) {
 
-        Iterable<Article> articles=  articleRepo.findAll();
-        model.put("articles",articles);
+        Iterable<Article> articles = articleRepo.findAll();
+        model.put("articles", articles);
 
-        model.put("article",articles.iterator().next());
+        model.put("article", handlerTextHTML.procesArticleText( articles.iterator().next()));
         return "greeting";
     }
 
     @GetMapping("/main/{article}")
     public String greeting(@PathVariable Article article, Model model) {
-        model.addAttribute("article",article);
+        model.addAttribute("article", handlerTextHTML.procesArticleText(article));
         model.addAttribute("articles", articleRepo.findAll());
 
         return "greeting";
