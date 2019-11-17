@@ -1,3 +1,84 @@
-.temp{
-    background-color: dodgerblue;
+div.logo-container{
+    width: 3%;
+    max-width: 756px;
+    margin: 0 auto;
+}
+img.logo{
+    width: 100%;
+    height: auto;
+}
+nav{
+    border-top: 4px solid #6db33f;
+    background-color: #34302d;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    text-shadow: none;
+    font-size: 1.25rem;
+    line-height: 14px;
+    padding: 28px 28px;
+    font-weight: 700;
+    color: #6db33f;
+    border-radius: 0 0 15% 15%;
+}
+nav a:hover{
+    color: #f1f1f1;
+    text-decoration: none;
+     background-color: #6db33f;
+ }
+/*.article-title{*/
+/*    background-color: #6db33f;*/
+/*}*/
+body{
+    height: 100%;
+    background-color: #f1f1f1;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+}
+div.articles{
+margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 -4px 0 #34302d;
+    /*background-color: #34302d;*/
+}
+aside{
+    margin-top: 10px;
+    width: 25%;
+    min-height: 100%;
+    float: left;
+}
+main{
+    padding-left: 7px;
+    min-height:100%;
+    float: right;
+    width: 75%;
+    height: auto;
+}
+footer{
+    font-size: 1.1rem;
+    color: aliceblue;
+    float: bottom;
+    background-color: #34302d;
+}
+div h4{
+    margin-top: 4px;
+    text-align: center;
+}
+ul.list-of-articles{
+    padding-left: 0px;
+    list-style-type: none;
+}
+ul.list-of-articles li{
+    color: #6db33f;
+    padding: 12px 6.2%;
+    border-top: 1px solid #cccccc;
+}
+ul.list-of-articles a{
+    color: #6db33f;
+}
+.user-name{
+
 }

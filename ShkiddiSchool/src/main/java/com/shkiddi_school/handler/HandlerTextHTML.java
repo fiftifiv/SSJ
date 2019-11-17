@@ -32,14 +32,6 @@ public class HandlerTextHTML extends HandlerTextImpl {
         return article;
     }
 
-    public static void main(String[] args) {
-
-        new HandlerTextImpl()
-                .findSubstringInString("aldjf {#1#} aldsfja {#4#} alfda {#4#} aldjf {#6#}", "[{]#\\d#[}]")
-                .forEach(System.out::println);
-        System.out.println(new HandlerTextHTML().processText("aldjf {#1#} aldsfja {#4#} alfda {#4#} aldjf {#6#}", "[{]#\\d#[}]", "super"));
-
-
-    }
+    
 
 }
