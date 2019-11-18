@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55dd18ee-bb3a-4884-a9cb-501177f9dc4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +171,10 @@
       <workItem from="1573894866675" duration="1172000" />
       <workItem from="1573896148208" duration="1166000" />
       <workItem from="1573901200140" duration="5061000" />
-      <workItem from="1573916838415" duration="7729000" />
+      <workItem from="1573916838415" duration="7855000" />
+      <workItem from="1573995223815" duration="632000" />
+      <workItem from="1574002360766" duration="412000" />
+      <workItem from="1574073937934" duration="938000" />
     </task>
     <servers />
   </component>
