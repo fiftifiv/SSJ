@@ -1,15 +1,30 @@
 <#import "parts/common.ftl" as c>
-
+<#include "parts/security.ftl">
 <@c.page>
     <aside>
         <div class="articles">
             <div>
                 <h4>Article list</h4>
         <ul class="list-of-articles">
-    <#list articles! as article>
-    <#--    list article menu-->
-        <li><a href="/main/${article.getId()}">${article.getTitle()}</a></li>
-    </#list>
+
+            <#if isAdmin>
+            <#list articles! as article >
+                <li>
+                    <a href="/main/${article.getId()}">${article.getTitle()}</a>
+                    <a href="/article/${article.getId()}">Edit</a>
+                    <a href="/article/delete/${article.getId()}">Delete</a>
+
+                </li>
+            </#list>
+
+            <#else>
+                <#list articles! as article>
+
+                    <li><a href="/main/${article.getId()}">${article.getTitle()}</a></li>
+
+                </#list>
+            </#if>
+            <li><a href="/article/add">Add new Article*******</a></li>
         </ul>
             </div>
         </div>
@@ -22,7 +37,7 @@
             </h1>
         </div>
     <div>
-        <h4>${article.getTextHTML()!}</h4>
+        <h4>${article.getText()!}</h4>
     </div>
     </main>
 

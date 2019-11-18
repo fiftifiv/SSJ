@@ -85,11 +85,10 @@ public class ArticleController {
     }
 
     @GetMapping("add")
-    public String addArticle(@RequestParam("title") String title, Model model) {
-        articleService.addArticle(title);
+    public String addArticle( Model model) {
 
-        model.addAttribute("articles", articleService.getAllAtricle());
-        return "articleList";
+        model.addAttribute("article", articleService.addArticle("Title"));
+        return "articleEdit";
     }
 
     @GetMapping("delete/{article}")

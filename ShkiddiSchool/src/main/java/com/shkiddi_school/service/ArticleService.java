@@ -22,10 +22,11 @@ public class ArticleService {
         return articles;
     }
 
-    public void addArticle(String title) {
+    public Article addArticle(String title) {
         Article article = new Article();
         article.setTitle(title);
         articleRepo.save(article);
+        return article;
     }
 
     public void deleteArticle(long id){
