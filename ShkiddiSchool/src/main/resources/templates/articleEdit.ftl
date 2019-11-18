@@ -14,15 +14,16 @@
 
     <div>
 
-    <#list article.getPhotoArticles()! as photo>
+    <div class="card-columns">
 
-    <div class="card mb-3">
-        <img src="/img/${photo.getName()}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${photo.getNumber()}</h5>
-            
-        </div>
+        <#list article.getPhotoArticles()! as photo>
 
+            <div class="card" style="width: 18rem;">
+                <img src="/img/${photo.getName()}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">${photo.getNumber()}</p>
+                </div>
+            </div>
 
         </#list>
     </div>
