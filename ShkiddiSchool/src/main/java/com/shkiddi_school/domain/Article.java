@@ -27,23 +27,5 @@ public class Article {
         this.photoArticles.add(photoArticle);
     }
 
-    public String getTextHTML() {
-        String s = "<img src=\"$\" class=\"card-img\" alt=\"Responsive image\">";
-        String result = text;
-        String pattern = "\\{#*\b#}";
 
-        if (Pattern.matches(pattern, text)) {
-            for (PhotoArticle photo :
-                    photoArticles) {
-                String p = "\\{#" + photo.getNumber() + "#}";
-                if (Pattern.matches(p, text)) {
-                    result = (text.replaceAll(p, "llllllllll"));
-//                    s.replaceAll("\\$", "\\img\\" + photo.getName()))
-                }
-            }
-
-        }
-        result = text.replaceAll("\n", "<br>");
-        return result;
-    }
 }
