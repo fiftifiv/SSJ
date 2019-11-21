@@ -22,18 +22,15 @@ public class ArticleService {
         return articles;
     }
 
-    public void addArticle(String title) {
-        Article article = new Article();
-        article.setTitle(title);
-        articleRepo.save(article);
-    }
+
 
     public void deleteArticle(long id){
         articleRepo.deleteById(id);
     }
 
 
-    public void saveArticle(Article article) {
+    public Article saveArticle(Article article) {
         articleRepo.save(article);
+        return  article;
     }
 }

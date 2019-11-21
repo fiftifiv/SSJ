@@ -20,7 +20,7 @@
         </tr>
         <#list articles!  as article>
             <tr>
-                <td>${article.getTitle()}</td>
+                <td>${article.getTitle()!}</td>
                 <td><a href="/article/${article.getId()}">Edit</a></td>
                 <td><a href="/article/delete/${article.getId()}">Delete</a></td>
 

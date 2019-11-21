@@ -20,9 +20,8 @@
                 <li class="">
                     <a class="" href="/user">List User <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="">
-                    <a class="" href="/article">List Article <span class="sr-only">(current)</span></a>
-                </li>
+
+                <#else>
             </#if>
         </ul>
         <div class="navbar-text user-name">${name}</div>

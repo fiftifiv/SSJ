@@ -1,8 +1,6 @@
 package com.shkiddi_school.domain;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -12,6 +10,7 @@ import java.util.regex.Pattern;
 @Getter
 @Setter
 @NoArgsConstructor
+
 @Entity
 public class Article {
 
@@ -20,6 +19,11 @@ public class Article {
     private long id;
     private String text;
     private String title;
+
+    @OneToOne
+    private Test test;
+
+
     @OneToMany
     private Set<PhotoArticle> photoArticles;
 
@@ -27,23 +31,11 @@ public class Article {
         this.photoArticles.add(photoArticle);
     }
 
-    public String getTextHTML() {
-        String s = "<img src=\"$\" class=\"card-img\" alt=\"Responsive image\">";
-        String result = text;
-        String pattern = "\\{#*\b#}";
+    public static Article getInstance() {
 
-        if (Pattern.matches(pattern, text)) {
-            for (PhotoArticle photo :
-                    photoArticles) {
-                String p = "\\{#" + photo.getNumber() + "#}";
-                if (Pattern.matches(p, text)) {
-                    result = (text.replaceAll(p, "llllllllll"));
-//                    s.replaceAll("\\$", "\\img\\" + photo.getName()))
-                }
-            }
+        Article article = new Article();
 
-        }
-        result = text.replaceAll("\n", "<br>");
-        return result;
+
+        return article;
     }
 }
