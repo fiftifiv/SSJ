@@ -68,7 +68,7 @@ div h4{
     text-align: center;
 }
 ul.list-of-articles{
-    padding-left: 0px;
+    padding-left: 0;
     list-style-type: none;
 }
 ul.list-of-articles li{
@@ -81,4 +81,61 @@ ul.list-of-articles a{
 }
 .user-name{
 
+}
+.login-form{
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gotham SSm A", "Gotham SSm B", "Arial Unicode MS", Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #4b4b4b;
+    width: 50%;
+}
+.login-panel{
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    background-color: #f7f5f3;
+    border: 1px solid #c7c3c0;
+}
+.user-name{
+    padding: 5px;
+}
+.user-password{
+    padding: 5px;
+}
+.user-email{
+    padding: 5px;
+}
+.btn-signin{
+    padding: 5px;
+    font-size: 1rem;
+    line-height: 1.65;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #00a6fd;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+.parent-login-form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
 }
