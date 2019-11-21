@@ -20,7 +20,7 @@
                 <li class="">
                     <a class="" href="/user">List User <span class="sr-only">(current)</span></a>
                 </li>
-                
+
                 <#else>
             </#if>
         </ul>

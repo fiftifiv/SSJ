@@ -3,9 +3,12 @@ package com.shkiddi_school.controller;
 
 import com.shkiddi_school.domain.Article;
 import com.shkiddi_school.domain.PhotoArticle;
+import com.shkiddi_school.domain.Test;
 import com.shkiddi_school.handler.HandlerTextHTML;
+import com.shkiddi_school.repos.ArticleRepo;
 import com.shkiddi_school.repos.PhotoArticleRepo;
 import com.shkiddi_school.service.ArticleService;
+import com.shkiddi_school.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -29,6 +32,11 @@ public class ArticleController {
     PhotoArticleRepo paRepo;
     @Autowired
     HandlerTextHTML handlerTextHTML;
+    @Autowired
+    TestService testService;
+    @Autowired
+    ArticleRepo articleRepo;
+
 
     @Value("${upload.path}")
     private String uploadPath;
@@ -85,18 +93,36 @@ public class ArticleController {
     }
 
     @GetMapping("add")
-    public String addArticle( Model model) {
+    public String addArticle(Model model) {
+        Test test = new Test();
 
-        model.addAttribute("article", articleService.addArticle("Title"));
+        Article article = new Article();
+        article.setTest(test);
+
+
+        testService.save(test);
+        model.addAttribute("article", articleService.saveArticle(article));
+
         return "articleEdit";
     }
 
     @GetMapping("delete/{article}")
     public String deleteArticle(@PathVariable Article article, Model model) {
         articleService.deleteArticle(article.getId());
-        model.addAttribute("articles", articleService.getAllAtricle());
+        Iterable<Article> articles = articleRepo.findAll();
+        model.addAttribute("articles", articles);
+        if (articles.iterator().hasNext()) {
+            article = handlerTextHTML.procesArticleText(articles.iterator().next());
 
-        return "articleList";
+        } else {
+            article = new Article();
+            article.setText("Add Article");
+            article.setTitle("Add article");
+        }
+
+        model.addAttribute("article",article);
+
+        return "greeting";
     }
 
     @GetMapping("update/{article}")
@@ -104,6 +130,7 @@ public class ArticleController {
         article.setTitle(title);
         article.setText(text);
         articleService.saveArticle(article);
+
         model.addAttribute("article", handlerTextHTML.procesArticleText(article));
         model.addAttribute("articles", articleService.getAllAtricle());
 

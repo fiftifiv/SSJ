@@ -6,13 +6,20 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Set;
 
-@Entity
+
+
+
 @Getter
 @Setter
+@Entity
 public class Test {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
+
+    @OneToOne
+    Question trueAnswer;
+
     @OneToMany
     Set<Question> questions;
 

@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Controller
@@ -32,11 +33,21 @@ public class MainController {
 
     @GetMapping("/")
     public String greeting(Map<String, Object> model) {
-
         Iterable<Article> articles = articleRepo.findAll();
         model.put("articles", articles);
+        Article article;
+        if (articles.iterator().hasNext()) {
+            article = handlerTextHTML.procesArticleText(articles.iterator().next());
+            model.put("article", article);
+        } else {
+            article = new Article();
+            article.setText("Add Article");
+            article.setTitle("Add article");
+        }
 
-        model.put("article", handlerTextHTML.procesArticleText( articles.iterator().next()));
+
+//        model.put("questions", article.getTest().getQuestions().stream().collect(Collectors.toList()));
+
         return "greeting";
     }
 
@@ -45,6 +56,7 @@ public class MainController {
         model.addAttribute("article", handlerTextHTML.procesArticleText(article));
         model.addAttribute("articles", articleRepo.findAll());
 
+//        model.addAttribute("questions", article.getTest().getQuestions().stream().collect(Collectors.toList()));
         return "greeting";
     }
 
