@@ -17,13 +17,10 @@ public class Test {
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
 
-    @OneToOne
-    Question trueAnswer;
-
-    @OneToMany
-    Set<Question> questions;
+    @OneToMany(cascade=CascadeType.ALL)
+    private Set<Question> questions;
 
     public void add(Question question){
-        questions.add(question);
+        this.questions.add(question);
     }
 }

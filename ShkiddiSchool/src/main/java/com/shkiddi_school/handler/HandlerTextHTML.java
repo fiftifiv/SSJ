@@ -32,6 +32,4 @@ public class HandlerTextHTML extends HandlerTextImpl {
         }
         return article;
     }
-
-
 }

@@ -41,10 +41,17 @@
                 <ul class="list-of-articles">
 
                     <#list (article.getTest().getQuestions())! as question >
-                        <li><a href="">${question.getQuestion()}</a></li>
+                        <li>
+                            <a href="">${question.getQuestion()}</a>
+                            <a href="/test/editQuestion/${question.getId()}">Edit</a>
+                            <a href="/test/deleteQuestion/${article.getId()}/${question.getId()}">Delete</a>
+                        </li>
                     </#list>
 
-                    <Li><a href="/test/addQuestion/${(article.getTest().getId())!}">Add new question</a></Li>
+                    <Li><a href="/test/addQuestion/${article.getId()}/${(article.getTest().getId())!}">Add new question</a>
+
+
+                    </li>
                 </ul>
 
             </div>

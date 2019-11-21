@@ -86,7 +86,7 @@ public class ArticleController {
             article.getPhotoArticles().add(photoArticle);
 
             paRepo.save(photoArticle);
-            article.addPhoto(photoArticle);
+
         }
 
         return "articleEdit";
@@ -109,20 +109,7 @@ public class ArticleController {
     @GetMapping("delete/{article}")
     public String deleteArticle(@PathVariable Article article, Model model) {
         articleService.deleteArticle(article.getId());
-        Iterable<Article> articles = articleRepo.findAll();
-        model.addAttribute("articles", articles);
-        if (articles.iterator().hasNext()) {
-            article = handlerTextHTML.procesArticleText(articles.iterator().next());
-
-        } else {
-            article = new Article();
-            article.setText("Add Article");
-            article.setTitle("Add article");
-        }
-
-        model.addAttribute("article",article);
-
-        return "greeting";
+        return "redirect:/";
     }
 
     @GetMapping("update/{article}")
@@ -131,11 +118,7 @@ public class ArticleController {
         article.setText(text);
         articleService.saveArticle(article);
 
-        model.addAttribute("article", handlerTextHTML.procesArticleText(article));
-        model.addAttribute("articles", articleService.getAllAtricle());
-
-
-        return "greeting";
+        return "redirect:/main/"+ article.getId();
     }
 
 
