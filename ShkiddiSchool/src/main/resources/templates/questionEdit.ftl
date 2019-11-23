@@ -1,7 +1,7 @@
 <#import "parts/common.ftl" as c>
 <@c.page>
 
-    <form method="get" action="/test/updateQuestion/${question.getId()}">
+    <form method="get" action="/test/updateQuestion/${question.getId()}/${test.getId()}">
         <h5>Question</h5>
         <input type="text" name="question" value="${question.getQuestion()}">
 
@@ -14,12 +14,16 @@
             <a href="/test/delete/${question.getId()}/${answer.getId()}">Delete</a>
         </#list>
 
-        <h5>New false answer</h5>
 
-        <input type="text" name="newFalseAnswer" value="New false answer"/>
+        <a href="/test/addAnswer/${test.getId()}/${question.getId()}">Add new answer</a>
+
+
 
         <button type="submit">Save</button>
 
     </form>
+
+    <form method="get" action="/test/addQuestion/">
+
 
 </@c.page>

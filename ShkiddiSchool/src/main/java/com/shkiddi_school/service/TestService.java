@@ -47,6 +47,7 @@ public class TestService {
 
         Answer answer = new Answer();
         answer.setText(textAnswer);
+        answer.setRight(false);
         question.getFalseAnswers().add(answer);
         answerRepo.save(answer);
         return answer;

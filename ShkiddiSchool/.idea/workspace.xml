@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55dd18ee-bb3a-4884-a9cb-501177f9dc4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/ssj.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/repos/AnswerRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/testList.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/handler/HandlerTextHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/handler/HandlerTextHTML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/repos/QuestionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/repos/QuestionRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/questionEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/questionEdit.ftl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,7 +69,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/TaskPZMaven" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -196,7 +187,9 @@
       <workItem from="1574172295539" duration="6578000" />
       <workItem from="1574246547763" duration="4707000" />
       <workItem from="1574258978721" duration="4883000" />
-      <workItem from="1574345354463" duration="6368000" />
+      <workItem from="1574345354463" duration="6916000" />
+      <workItem from="1574405591671" duration="11130000" />
+      <workItem from="1574432340750" duration="6292000" />
     </task>
     <servers />
   </component>

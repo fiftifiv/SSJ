@@ -20,7 +20,7 @@
                     <#else>
                         <#list articles! as article>
 
-                            <li><a href="/main/${article.getId()}">${article.getTitle()}</a></li>
+                            <li><a href="/main/${article.getId()}">${article.getTitle()!}</a></li>
 
                         </#list>
                     </#if>
@@ -31,37 +31,12 @@
             </div>
         </div>
 
-        <#if isAdmin>
-
-            <div class="articles">
-                <div>
-                    <h4>Questions test</h4>
-                </div>
-
-                <ul class="list-of-articles">
-
-                    <#list (article.getTest().getQuestions())! as question >
-                        <li>
-                            <a href="">${question.getQuestion()}</a>
-                            <a href="/test/editQuestion/${question.getId()}">Edit</a>
-                            <a href="/test/deleteQuestion/${article.getId()}/${question.getId()}">Delete</a>
-                        </li>
-                    </#list>
-
-                    <Li><a href="/test/addQuestion/${article.getId()}/${(article.getTest().getId())!}">Add new question</a>
-
-
-                    </li>
-                </ul>
-
-            </div>
-
-        </#if>
-
     </aside>
 
     <main class="main-section">
         <div class="article-title" align="CENTER">
+
+            <a href="/test/${(article.getTest().getId())!}">Test</a>
             <h1>
                 <span>${article.getTitle()!}</span>
             </h1>

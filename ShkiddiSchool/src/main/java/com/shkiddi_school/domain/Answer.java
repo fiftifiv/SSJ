@@ -14,7 +14,7 @@ import javax.persistence.Id;
 public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    int id;
-
-    String text;
+    private int id;
+    private boolean right;
+    private String text;
 }

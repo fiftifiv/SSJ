@@ -7,15 +7,13 @@ import com.shkiddi_school.handler.HandlerText;
 import com.shkiddi_school.handler.HandlerTextHTML;
 import com.shkiddi_school.repos.ArticleRepo;
 import com.shkiddi_school.repos.MessageRepo;
+import com.shkiddi_school.service.ArticleService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -25,28 +23,26 @@ import java.util.stream.Stream;
 public class MainController {
     @Autowired
     private MessageRepo messageRepo;
+
+    @Autowired
+    private ArticleService articleService;
+
     @Autowired
     private ArticleRepo articleRepo;
 
     @Autowired
     private HandlerTextHTML handlerTextHTML;
 
+
     @GetMapping("/")
-    public String greeting(Map<String, Object> model) {
+    public String greeting(
+            @PathVariable(required = false) Article article
+            , Map<String, Object> model) {
+
         Iterable<Article> articles = articleRepo.findAll();
         model.put("articles", articles);
-        Article article;
-        if (articles.iterator().hasNext()) {
-            article = handlerTextHTML.procesArticleText(articles.iterator().next());
-            model.put("article", article);
-        } else {
-            article = new Article();
-            article.setText("Add Article");
-            article.setTitle("Add article");
-        }
 
-
-//        model.put("questions", article.getTest().getQuestions().stream().collect(Collectors.toList()));
+        model.put("article", handlerTextHTML.procesArticleText(articleService.getFirstArticleWithBD()));
 
         return "greeting";
     }
@@ -56,7 +52,6 @@ public class MainController {
         model.addAttribute("article", handlerTextHTML.procesArticleText(article));
         model.addAttribute("articles", articleRepo.findAll());
 
-//        model.addAttribute("questions", article.getTest().getQuestions().stream().collect(Collectors.toList()));
         return "greeting";
     }
 
