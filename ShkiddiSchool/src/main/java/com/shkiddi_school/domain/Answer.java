@@ -15,6 +15,6 @@ public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private boolean right;
+
     private String text;
 }

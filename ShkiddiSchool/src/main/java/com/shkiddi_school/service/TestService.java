@@ -10,6 +10,9 @@ import org.aspectj.weaver.patterns.TypePatternQuestions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
+import java.util.Optional;
+
 @Service
 public class TestService {
 
@@ -29,44 +32,60 @@ public class TestService {
     public Question addNewQuestionToTest(Test test, String question) {
         Question question1 = new Question();
         question1.setQuestion(question);
+
+
         test.add(question1);
         questionRepo.save(question1);
+
         return question1;
     }
 
-    public void deleteQuestion( Question question){
+    public void deleteQuestion(Question question) {
         questionRepo.delete(question);
     }
 
     public Test save(Test test) {
         testRepo.save(test);
-        return  test;
+        return test;
     }
 
-    public Answer addNewAnswerToQuestion(String textAnswer , Question question){
+    public Answer addNewAnswerToQuestion(String textAnswer, Question question) {
 
         Answer answer = new Answer();
         answer.setText(textAnswer);
-        answer.setRight(false);
+
         question.getFalseAnswers().add(answer);
         answerRepo.save(answer);
         return answer;
     }
 
-    public Question updateTrueAnswer(String trueAnswer, Question question){
+    public Question updateTrueAnswer(String trueAnswer, Question question) {
+
         question.setTrueAnswer(trueAnswer);
         questionRepo.save(question);
         return question;
     }
 
-    public Question updateQuestion(String textQuestion , Question question){
+    public Question updateQuestion(String textQuestion, Question question) {
         question.setQuestion(textQuestion);
         questionRepo.save(question);
         return question;
     }
 
-    public void deleteAnswer(Answer answer){
+    public void deleteAnswer(Answer answer) {
         answerRepo.delete(answer);
     }
 
+    public void updateAnswer(Answer answer, String textAnswer) {
+        answer.setText(textAnswer);
+        answerRepo.save(answer);
+    }
+
+    public void updateAnswer(int id, String textAnswer) {
+        answerRepo.findById(id)
+                .ifPresent(answer -> {
+                    answer.setText(textAnswer);
+                    answerRepo.save(answer);
+                });
+    }
 }

@@ -7,16 +7,19 @@
 
         <h5>True answer</h5>
         <input type="text" name="trueAnswer" value="${question.getTrueAnswer()!}">
+
         <h5>False answer</h5>
 
-        <#list question.getFalseAnswers() as answer>
-            <input type="text" name="falseAnswer" value="${answer.getText()}">
-            <a href="/test/delete/${question.getId()}/${answer.getId()}">Delete</a>
-        </#list>
+        <#if question.getFalseAnswers()??>
+            <#list question.getFalseAnswers()! as answer>
+                <input type="text" name="${answer.getId()}" value="${answer.getText()}">
+                <a href="/test/delete/${question.getId()}/${answer.getId()}/${test.getId()}">Delete</a>
+            </#list>
+
+        </#if>
 
 
         <a href="/test/addAnswer/${test.getId()}/${question.getId()}">Add new answer</a>
-
 
 
         <button type="submit">Save</button>

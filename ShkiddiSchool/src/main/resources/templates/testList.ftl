@@ -1,5 +1,5 @@
 <#import "parts/common.ftl" as c>
-    <#include "parts/security.ftl">
+<#include "parts/security.ftl">
 <@c.page>
 
     <aside>
@@ -9,7 +9,7 @@
 
 
                 <ul class="list-of-articles">
-<h1></h1>
+                    <h1></h1>
                     <#list test.getQuestions()! as question >
                         <li>
                             <a href="">${question.getQuestion()}</a>
@@ -25,19 +25,27 @@
                 </ul>
 
             </div>
-d
+            d
         </#if>
 
     </aside>
 
 
-<if test.getQuestions()??>
-    <#list test.getQuestions()! as question>
 
+    <form action="/test/result/${test.getId()}" >
+        <if test.getQuestions()??>
+            <#list test.getQuestions()! as question>
 
+                <h4>${question.getQuestion()}</h4>
 
-    </#list>
-</if>
+                <#list question.getShuffleAnswers() as key,value>
+                    <label><input type="checkbox" name="${value?string('right' , 'noright')}">${key!}</label>
+                </#list>
 
-    <button type="submit">Result</button>
+            </#list>
+
+        </if>
+
+        <button type="submit">Result</button>
+    </form>
 </@c.page>
