@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="55dd18ee-bb3a-4884-a9cb-501177f9dc4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,6 +188,7 @@
       <workItem from="1574697521089" duration="4754000" />
       <workItem from="1574758958542" duration="4302000" />
       <workItem from="1574779013598" duration="2144000" />
+      <workItem from="1574782067831" duration="789000" />
     </task>
     <servers />
   </component>

@@ -12,6 +12,7 @@
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: ${usersService.userProgresTest(user)}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">${usersService.userProgresTest(user)}%</div>
                 </div>
+
                 <div>
                     <a href="/user/${user.id}">Edit</a>
                     <a href="/user/delete/${user.id}">Delete</a>
