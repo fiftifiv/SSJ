@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55dd18ee-bb3a-4884-a9cb-501177f9dc4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gitignore" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -189,6 +189,8 @@
       <workItem from="1574758958542" duration="4302000" />
       <workItem from="1574779013598" duration="2144000" />
       <workItem from="1574782067831" duration="789000" />
+      <workItem from="1574786006575" duration="181000" />
+      <workItem from="1574786202757" duration="50000" />
     </task>
     <servers />
   </component>
@@ -210,6 +212,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/target" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="694" y="357" width="588" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1572460828455">
