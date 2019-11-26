@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55dd18ee-bb3a-4884-a9cb-501177f9dc4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Progres.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/repos/ProgresRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/ProgresService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/TestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/questionEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/questionEdit.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +190,8 @@
       <workItem from="1574507445080" duration="3486000" />
       <workItem from="1574665153547" duration="5737000" />
       <workItem from="1574697521089" duration="4754000" />
-      <workItem from="1574758958542" duration="3699000" />
+      <workItem from="1574758958542" duration="4302000" />
+      <workItem from="1574779013598" duration="2144000" />
     </task>
     <servers />
   </component>

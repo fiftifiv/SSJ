@@ -18,7 +18,8 @@ import java.util.UUID;
 public class UserService implements UserDetailsService {
     @Autowired
     private UserRepo userRepo;
-
+    @Autowired
+    private TestService testService;
 
 
     @Override
@@ -53,7 +54,7 @@ public class UserService implements UserDetailsService {
     public boolean activateUser(String code) {
         User user = userRepo.findByActivationCode(code);
 
-        if(user == null){
+        if (user == null) {
             return false;
         }
 
@@ -62,7 +63,11 @@ public class UserService implements UserDetailsService {
         return true;
     }
 
-    public void save(User user){
+    public void save(User user) {
         userRepo.save(user);
+    }
+
+    public int userProgresTest(User user) {
+        return (100 * user.getProgres().size()) / testService.findAll().size();
     }
 }

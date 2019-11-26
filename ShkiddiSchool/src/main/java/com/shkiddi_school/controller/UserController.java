@@ -3,6 +3,7 @@ package com.shkiddi_school.controller;
 import com.shkiddi_school.domain.Role;
 import com.shkiddi_school.domain.User;
 import com.shkiddi_school.repos.UserRepo;
+import com.shkiddi_school.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.converter.json.GsonBuilderUtils;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -19,10 +20,13 @@ import java.util.stream.Collectors;
 public class UserController {
     @Autowired
     private UserRepo userRepo;
+    @Autowired
+    private UserService userService;
 
     @GetMapping
     public String userList(Model model) {
         model.addAttribute("users", userRepo.findAll());
+        model.addAttribute("usersService", userService);
         return "userList";
     }
 
@@ -33,14 +37,18 @@ public class UserController {
         return "userEdit";
     }
 
+    @GetMapping("delete/{user}")
+    public String deleteUser(@PathVariable User user, Model model) {
+        userRepo.delete(user);
+        return "redirect:/user";
+    }
+
     @PostMapping
     public String saveUser(
 
             @RequestParam Map<String, String> form,
             @RequestParam("userId") User user
     ) {
-
-        form.entrySet().forEach(System.out::println);
 
         List<String> collect = form.entrySet()
                 .stream()
@@ -55,7 +63,6 @@ public class UserController {
                 .filter((entry) -> collect.contains(entry.getKey()))
                 .map(entry -> entry.getValue())
                 .collect(Collectors.toSet());
-        roles.forEach(System.out::println);
 
         user.setUsername(form.get("username"));
         user.getRoles().clear();

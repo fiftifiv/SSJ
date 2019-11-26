@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.swing.text.html.Option;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -91,5 +93,11 @@ public class TestService {
 
     public int  getTestCompletionRate(int countTrueAnswer , Test test ){
         return (countTrueAnswer * 100) / test.getQuestions().size();
+    }
+
+    public List<Test> findAll(){
+        List<Test> tests = new ArrayList<>();
+        testRepo.findAll().forEach(test -> tests.add(test));
+        return tests;
     }
 }
