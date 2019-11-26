@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55dd18ee-bb3a-4884-a9cb-501177f9dc4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Progres.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/repos/ProgresRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/ProgresService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShkiddiSchool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/handler/HandlerTextHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/handler/HandlerTextHTML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shkiddi_school/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/questionEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/questionEdit.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/testList.ftl" afterDir="false" />
     </list>
@@ -43,8 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -200,6 +196,8 @@
       <workItem from="1574432340750" duration="6292000" />
       <workItem from="1574507445080" duration="3486000" />
       <workItem from="1574665153547" duration="5737000" />
+      <workItem from="1574697521089" duration="4754000" />
+      <workItem from="1574758958542" duration="3699000" />
     </task>
     <servers />
   </component>

@@ -3,13 +3,12 @@
 <@c.page>
 
     <aside>
+
         <#if isAdmin>
 
             <div class="articles">
-
-
                 <ul class="list-of-articles">
-                    <h1></h1>
+
                     <#list test.getQuestions()! as question >
                         <li>
                             <a href="">${question.getQuestion()}</a>
@@ -25,14 +24,19 @@
                 </ul>
 
             </div>
-            d
+
         </#if>
 
     </aside>
 
 
+    <#if progres.isPresent()>
+        <h1>Ваш самый лучшый  результат теста на ${progres.get().getTestCompletionRate()}%</h1>
+    <#else>
+        <h1>Успехов в здаче теста</h1>
+    </#if>
 
-    <form action="/test/result/${test.getId()}" >
+    <form action="/test/result/${test.getId()}/${currentUserId}">
         <if test.getQuestions()??>
             <#list test.getQuestions()! as question>
 

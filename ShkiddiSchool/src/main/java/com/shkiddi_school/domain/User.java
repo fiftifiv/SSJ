@@ -32,6 +32,9 @@ public class User implements UserDetails {
     private Set<Role> roles;
 
 
+    @OneToMany
+    private Set<Progres> progres;
+
     public boolean isAdmin(){
         return  roles.contains(Role.ADMIN);
     }

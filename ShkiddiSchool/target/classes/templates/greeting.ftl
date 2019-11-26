@@ -36,10 +36,12 @@
     <main class="main-section">
         <div class="article-title" align="CENTER">
 
-            <a href="/test/${(article.getTest().getId())!}">Test</a>
+            <a href="/test/${(article.getTest().getId())!}/${currentUserId}">Test</a>
+
             <h1>
                 <span>${article.getTitle()!}</span>
             </h1>
+
         </div>
         <div>
             <h4>${article.getText()!}</h4>

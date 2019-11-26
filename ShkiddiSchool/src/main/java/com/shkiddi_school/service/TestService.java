@@ -88,4 +88,8 @@ public class TestService {
                     answerRepo.save(answer);
                 });
     }
+
+    public int  getTestCompletionRate(int countTrueAnswer , Test test ){
+        return (countTrueAnswer * 100) / test.getQuestions().size();
+    }
 }

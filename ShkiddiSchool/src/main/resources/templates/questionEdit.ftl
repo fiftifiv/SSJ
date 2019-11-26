@@ -1,7 +1,8 @@
 <#import "parts/common.ftl" as c>
+<#include "parts/security.ftl">
 <@c.page>
 
-    <form method="get" action="/test/updateQuestion/${question.getId()}/${test.getId()}">
+    <form method="get" action="/test/updateQuestion/${question.getId()}/${test.getId()}/${currentUserId}">
         <h5>Question</h5>
         <input type="text" name="question" value="${question.getQuestion()}">
 

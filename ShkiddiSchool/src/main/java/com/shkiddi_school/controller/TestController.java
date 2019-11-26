@@ -3,7 +3,9 @@ package com.shkiddi_school.controller;
 import com.google.common.primitives.Ints;
 import com.shkiddi_school.domain.*;
 import com.shkiddi_school.handler.HandlerText;
+import com.shkiddi_school.service.ProgresService;
 import com.shkiddi_school.service.TestService;
+import com.shkiddi_school.service.UserService;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/test")
@@ -19,25 +22,54 @@ public class TestController {
 
     @Autowired
     TestService testService;
+    @Autowired
+    ProgresService progresService;
+    @Autowired
+    UserService userService;
 
-    @GetMapping("result/{test}")
+    @GetMapping("result/{test}/{user}")
     public String resultTest(
+            @PathVariable User user
+            , @PathVariable Test test
+            , @RequestParam(name = "right", required = false) List<String> answer) {
 
-             @RequestParam(name = "right", required = false) List<String> answer
-            , @PathVariable Test test) {
-        
-        if(answer != null){
-            answer.stream().forEach(System.out::println);
+        Optional<Progres> progres = user.getProgres()
+                .stream()
+                .filter(p -> p.getTest().getId() == test.getId())
+                .findFirst();
+
+        if (!progres.isPresent()) {
+            progres = Optional.of(new Progres());
+            progres.get().setTest(test);
+            user.getProgres().add(progres.get());
         }
 
-        return "redirect:/";
+        int countRightAnswer = answer != null ? answer.size() : 0;
+        int testCompletionRate = testService.getTestCompletionRate(countRightAnswer, test);
+
+        if (testCompletionRate > progres.get().getTestCompletionRate()) {
+
+            progres.get().setNumberOfPasses(progres.get().getNumberOfPasses() + 1);
+
+        } else {
+
+            testCompletionRate = progres.get().getTestCompletionRate();
+        }
+
+        progres.get().setTestCompletionRate(
+                testCompletionRate);
+
+        progresService.saveProgres(progres.get());
+        userService.save(user);
+
+        return "redirect:/test/"+test.getId()+"/"+user.getId();
     }
 
     @GetMapping("addQuestion/{test}")
     public String addQuestion(
             @PathVariable Test test
             , Model model) {
-        System.out.println(test.getId());
+
         model.addAttribute("question", testService.addNewQuestionToTest(test, "Enter question"));
 
         return "redirect:/test/" + test.getId();
@@ -63,9 +95,10 @@ public class TestController {
         return "questionEdit";
     }
 
-    @GetMapping("updateQuestion/{question}/{test}")
+    @GetMapping("updateQuestion/{question}/{test}/{user}")
     public String updateQuestion(
             @PathVariable Test test
+            ,@PathVariable User user
             , @PathVariable Question question
             , @RequestParam(name = "question") String textQuestion
             , @RequestParam(name = "trueAnswer") String trueAnswer
@@ -87,7 +120,7 @@ public class TestController {
         }
 
 
-        return "redirect:/test/" + test.getId();
+        return "redirect:/test/" + test.getId()+"/"+user.getId();
     }
 
     @GetMapping("delete/{question}/{answer}/{test}")
@@ -98,16 +131,19 @@ public class TestController {
         return "redirect:/test/editQuestion/" + question.getId() + "/" + test;
     }
 
-    @GetMapping("{test}")
+    @GetMapping("{test}/{user}")
     public String test(
             @PathVariable Test test
+            ,@PathVariable User user
             , Model model) {
 
+        model.addAttribute("progres", user.getProgres().stream()
+                .filter( progres -> progres.getTest().getId() == test.getId())
+                .findFirst());
 
         model.addAttribute("test", test);
 
         return "testList";
-
     }
 
     @GetMapping("addAnswer/{test}/{question}")
