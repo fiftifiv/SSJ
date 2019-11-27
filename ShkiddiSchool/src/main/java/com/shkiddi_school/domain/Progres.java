@@ -4,23 +4,17 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.Set;
-
-
-
 
 @Getter
 @Setter
 @Entity
-public class Test {
+public class Progres {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
+    int numberOfPasses;
+    int testCompletionRate;
+    @OneToOne
+    Test test;
 
-    @OneToMany(cascade=CascadeType.ALL)
-    private Set<Question> questions;
-
-    public void add(Question question){
-        this.questions.add(question);
-    }
 }
