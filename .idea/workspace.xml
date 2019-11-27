@@ -2,7 +2,158 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee917890-46ef-41f1-b037-b335723ce1f0" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/Progres.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/repos/AnswerRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/repos/ProgresRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/ProgresService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/testList.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/Progres.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/repos/AnswerRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/repos/ProgresRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/ProgresService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/testList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShkiddiSchool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/ShkiddiSchool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/ShkiddiSchool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/handler/HandlerTextHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/handler/HandlerTextHTML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/repos/QuestionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/repos/QuestionRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/greeting.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/parts/security.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/parts/security.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/questionEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/questionEdit.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/userList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/handler/HandlerTextHTML.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/handler/HandlerTextHTML.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/repos/QuestionRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/repos/QuestionRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/TestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/greeting.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/security.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/security.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/questionEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/questionEdit.ftl" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_45.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_27_incubating.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_14_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/static/edit-pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/static/edit-plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/static/edit-recycle_bin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/static/edit-pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/static/edit-plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/static/edit-recycle_bin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/ShkiddiSchool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/ShkiddiSchool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/handler/HandlerTextHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/handler/HandlerTextHTML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/articleList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/articleList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/greeting.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/parts/common.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/userList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/config/MvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/handler/HandlerTextHTML.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/handler/HandlerTextHTML.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/articleList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/articleList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/greeting.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/common.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/navbar.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/testList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/testList.ftl" afterDir="false" />
+>>>>>>> master
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/userList.ftl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +166,11 @@
   </component>
   <component name="ProjectId" id="1Tq8a0YXUqCughuQ3E6xJfHz6Hl" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -30,6 +186,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+<<<<<<< HEAD
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ShkiddiSchool" />
+=======
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ShkiddiSchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shkiddi_school.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> master
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shkiddi_school.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+>>>>>>> master
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -41,7 +225,30 @@
       <option name="presentableId" value="Default" />
       <updated>1574176324704</updated>
       <workItem from="1574176326199" duration="1000" />
+<<<<<<< HEAD
+      <workItem from="1574336676657" duration="1448000" />
+      <workItem from="1574338179076" duration="698000" />
+=======
+      <workItem from="1574495578821" duration="14976000" />
+      <workItem from="1574852161407" duration="306000" />
+>>>>>>> master
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

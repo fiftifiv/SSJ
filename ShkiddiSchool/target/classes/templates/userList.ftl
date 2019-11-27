@@ -1,7 +1,6 @@
 <#import "parts/common.ftl" as c>
 <@c.page>
     List of Users
-
         <#list users ! "No search user!" as user>
             <div>
                 <div>
