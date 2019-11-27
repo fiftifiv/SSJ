@@ -1,11 +1,6 @@
-div.logo-container{
-    width: 3%;
-    max-width: 756px;
-    margin: 0 auto;
-}
-img.logo{
+html{
+    height: 100%;
     width: 100%;
-    height: auto;
 }
 nav{
     border-top: 4px solid #6db33f;
@@ -26,17 +21,76 @@ nav a{
 nav a:hover{
     color: #f1f1f1;
     text-decoration: none;
-     background-color: #6db33f;
- }
-/*.article-title{*/
-/*    background-color: #6db33f;*/
-/*}*/
+    background-color: #6db33f;
+}
+main{
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: 1rem;
+}
+section{
+    float: right;
+    width: 70%;
+}
+section.article{
+    padding-right: 5rem;
+}
+.article-title{
+    padding: 3rem 0;
+    text-align: center;
+}
+.article-text{
+    margin: 0rem 3rem 2rem;
+    font-size: 1.5rem;
+}
+h4{
+    text-align: center;
+}
+.article-image{
+    width: 100%;
+    text-align: center;
+}
+.article-image img{
+    margin: 2rem 0;
+    background-color: #ffffff;//цвет картинки
+}
+aside{
+    margin-top: 10px;
+    width: 25%;
+}
+footer{
+    height: 5rem;
+    font-size: 1.1rem;
+    color: aliceblue;
+    background-color: #34302d;
+}
+div.logo-container{
+    width: 3%;
+    max-width: 756px;
+    margin: 0 auto;
+}
+img.logo{
+    width: 100%;
+    height: auto;
+}
+.name-of-project{
+    font-size: 1.5rem;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    line-height: inherit;
+    color: black;
+}
+nav a.name-of-project:hover{
+    background-color: transparent;
+    color: #cccccc;
+}
 body{
     height: 100%;
     background-color: #f1f1f1;
 }
-.navbar-brand{
-    font-size: 1.5rem;
+footer{
+    clear:both;
+    display: block;
 }
 div.articles{
 margin: 10px;
@@ -44,43 +98,30 @@ margin: 10px;
     box-shadow: 0 -4px 0 #34302d;
     /*background-color: #34302d;*/
 }
-aside{
-    margin-top: 10px;
-    width: 25%;
-    min-height: 100%;
-    float: left;
-}
-main{
-    padding-left: 7px;
-    min-height:100%;
-    float: right;
-    width: 75%;
-    height: auto;
-}
-footer{
-    font-size: 1.1rem;
-    color: aliceblue;
-    float: bottom;
-    background-color: #34302d;
-}
 div h4{
     margin-top: 4px;
-    text-align: center;
 }
 ul.list-of-articles{
     padding-left: 0;
     list-style-type: none;
 }
+ul.list-of-articles a{
+    color: #6db33f;
+}
 ul.list-of-articles li{
+    position: relative;
     color: #6db33f;
     padding: 12px 6.2%;
     border-top: 1px solid #cccccc;
 }
-ul.list-of-articles a{
-    color: #6db33f;
+div.edit-block{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
 }
-.user-name{
-
+div.edit-plus{
+    display: flex;
+    justify-content: center;
 }
 .login-form{
     height: 10em;

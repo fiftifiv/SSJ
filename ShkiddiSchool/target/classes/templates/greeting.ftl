@@ -1,9 +1,20 @@
 <#import "parts/common.ftl" as c>
 <#include "parts/security.ftl">
 <@c.page>
+        <section class="article">
+            <div class="article-title">
+                <a href="/test/${(article.getTest().getId())!}">Test</a>
+                <h1>
+                    <span>${article.getTitle()!}</span>
+                </h1>
+            </div>
+            <div class="article-text">
+                <pre>${article.getText()!}</pre>
+            </div>
+        </section>
+
     <aside>
         <div class="articles">
-            <div>
                 <h4>Article list</h4>
                 <ul class="list-of-articles">
 
@@ -11,9 +22,10 @@
                         <#list articles! as article >
                             <li>
                                 <a href="/main/${article.getId()!}">${article.getTitle()!}</a>
-                                <a href="/article/${article.getId()!}">Edit</a>
-                                <a href="/article/delete/${article.getId()!}">Delete</a>
-
+                                <div class="edit-block">
+                                    <a href="/article/${article.getId()!}"><img src="/static/edit-pencil.svg" width="20px" height="20px" alt="edit"></a>
+                                    <a href="/article/delete/${article.getId()!}"><img src="/static/edit-recycle_bin.svg" width="20px" height="20px" alt="delete"></a>
+                                </div>
                             </li>
                         </#list>
 
@@ -25,14 +37,14 @@
                         </#list>
                     </#if>
 
-                    <li><a href="/article/add">Add new Article*******</a></li>
+                    <div class="edit-plus">
+                        <li><a href="/article/add"><img src="/static/edit-plus.svg" width="20px" height="20px" alt="add article"></a></li>
+                    </div>
 
                 </ul>
-            </div>
         </div>
 
     </aside>
-
     <main class="main-section">
         <div class="article-title" align="CENTER">
 
@@ -47,7 +59,6 @@
             <h4>${article.getText()!}</h4>
         </div>
     </main>
-
 <#--    article text and title-->
 
 </@c.page>

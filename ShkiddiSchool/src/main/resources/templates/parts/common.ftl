@@ -11,14 +11,17 @@
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
               crossorigin="anonymous">
         <link rel="stylesheet" href="/static/style.css">
-
-
     </head>
     <body>
     <#include "navbar.ftl" />
+    <main>
 <#--        <div>-->
             <#nested>
 <#--        </div>-->
+    </main>
+    <footer>
+        Footer
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>

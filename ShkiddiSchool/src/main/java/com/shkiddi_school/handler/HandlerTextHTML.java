@@ -21,8 +21,6 @@ public class HandlerTextHTML extends HandlerTextImpl {
                 if (article.getPhotoArticles().size() > 0) {
                     article.getPhotoArticles().stream()
                             .forEach((photo) -> {
-
-
                                 Optional<String> opt = locatePhotos.stream()
                                         .filter((locatePhoto) -> locatePhoto.contains(new Integer(photo.getNumber()).toString()))
                                         .findFirst();
