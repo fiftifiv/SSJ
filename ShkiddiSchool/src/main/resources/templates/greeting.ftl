@@ -1,17 +1,6 @@
 <#import "parts/common.ftl" as c>
 <#include "parts/security.ftl">
 <@c.page>
-        <section class="article">
-            <div class="article-title">
-                <a href="/test/${(article.getTest().getId())!}">Test</a>
-                <h1>
-                    <span>${article.getTitle()!}</span>
-                </h1>
-            </div>
-            <div class="article-text">
-                <pre>${article.getText()!}</pre>
-            </div>
-        </section>
 
     <aside>
         <div class="articles">
@@ -60,6 +49,6 @@
         </div>
     </main>
 
-<#--    article text and title-->
+
 
 </@c.page>

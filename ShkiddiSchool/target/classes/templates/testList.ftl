@@ -24,7 +24,7 @@
                 </ul>
 
             </div>
-d
+
         </#if>
 
     </aside>
@@ -42,7 +42,7 @@ d
 
                 <h4>${question.getQuestion()}</h4>
 
-                <#list question.getShuffleAnswers() as key,value>
+                <#list question.getShuffleAnswers()! as key,value>
                     <label><input type="checkbox" name="${value?string('right' , 'noright')}">${key!}</label>
                 </#list>
 
