@@ -65,23 +65,25 @@ public class TestController {
         return "redirect:/test/"+test.getId()+"/"+user.getId();
     }
 
-    @GetMapping("addQuestion/{test}")
+    @GetMapping("addQuestion/{test}/{user}")
     public String addQuestion(
             @PathVariable Test test
+            ,@PathVariable User user
             , Model model) {
 
         model.addAttribute("question", testService.addNewQuestionToTest(test, "Enter question"));
 
-        return "redirect:/test/" + test.getId();
+        return "redirect:/test/" + test.getId()+"/"+user.getId();
     }
 
-    @GetMapping("deleteQuestion/{test}/{question}")
+    @GetMapping("deleteQuestion/{test}/{question}/{user}")
     public String deleteQuestion(
             @PathVariable Test test
+            ,@PathVariable User user
             , @PathVariable Question question
     ) {
         testService.deleteQuestion(question);
-        return "redirect:/test/" + test.getId();
+        return "redirect:/test/" + test.getId()+"/"+user.getId();
     }
 
     @GetMapping("editQuestion/{question}/{test}")
