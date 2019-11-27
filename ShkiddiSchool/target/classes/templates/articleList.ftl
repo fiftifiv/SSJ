@@ -21,9 +21,8 @@
         <#list articles!  as article>
             <tr>
                 <td>${article.getTitle()!}</td>
-                <td><a href="/article/${article.getId()}">Edit</a></td>
-                <td><a href="/article/delete/${article.getId()}">Delete</a></td>
-
+                <td><a href="/article/${article.getId()}"><img src="/static/clover-symbol.svg" width="20px" height="20px" alt="edit"></a></td>
+                <td><a href="/article/delete/${article.getId()}"><img src="/static/clover-symbol.svg" width="20px" height="20px" alt="delete"></a></td>
             </tr>
         </#list>
         </tbody>
