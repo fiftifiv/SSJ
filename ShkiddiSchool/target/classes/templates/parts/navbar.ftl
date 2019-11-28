@@ -12,9 +12,7 @@
     <div class="collapse navbar-collapse temp" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
 
-            <li class="">
-                <a class="" href="/main">Main<span class="sr-only">(current)</span></a>
-            </li>
+
             <#if isAdmin>
 
                 <li class="">
@@ -23,6 +21,7 @@
 
                 <#else>
             </#if>
+
         </ul>
         <div class="navbar-text user-name">${name}</div>
         <@l.logout />

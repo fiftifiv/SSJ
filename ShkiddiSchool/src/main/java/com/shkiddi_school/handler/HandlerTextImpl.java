@@ -11,8 +11,8 @@ public class HandlerTextImpl implements HandlerText {
 
     @Override
     public List<String> findSubstringInString(String text, String pattern) {
-
         List<String> result = new ArrayList<>();
+        if( text != null){
 
         Pattern p= Pattern.compile(pattern);
         Matcher matcher = p.matcher(text);
@@ -21,6 +21,8 @@ public class HandlerTextImpl implements HandlerText {
             result.add(text.substring(matcher.start(),matcher.end()));
         }
 
+        return result;}
+        result.add("test");
         return result;
     }
 

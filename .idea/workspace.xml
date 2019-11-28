@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55dd18ee-bb3a-4884-a9cb-501177f9dc4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_flywaydb_flyway_core_5_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/db/migration/V2__Add_admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/db/migration/V3__Update_password.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/ShkiddiSchool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/ShkiddiSchool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/domain/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/handler/HandlerTextImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/handler/HandlerTextImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/repos/MessageRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/java/com/shkiddi_school/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/greeting.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/handler/HandlerTextImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/handler/HandlerTextImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/com/shkiddi_school/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/greeting.ftl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +45,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ssj" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,6 +91,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/static" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -98,7 +129,9 @@
       <option name="presentableId" value="Default" />
       <updated>1574854677380</updated>
       <workItem from="1574854678504" duration="1789000" />
-      <workItem from="1574863177313" duration="757000" />
+      <workItem from="1574863177313" duration="5211000" />
+      <workItem from="1574924694899" duration="5550000" />
+      <workItem from="1574937434566" duration="3580000" />
     </task>
     <servers />
   </component>
