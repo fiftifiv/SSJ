@@ -28,7 +28,7 @@
 
                     </#list>
                 </#if>
-                
+
                 <#if isAdmin>
                     <div class="edit-plus">
                         <li><a href="/article/add"><img src="/static/edit-plus.svg" width="20px" height="20px"
