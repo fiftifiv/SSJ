@@ -64,14 +64,15 @@ public class TestController {
         return "redirect:/test/"+test.getId()+"/"+user.getId();
     }
 
-    @GetMapping("addQuestion/{test}")
+    @GetMapping("addQuestion/{test}/{user}")
     public String addQuestion(
-            @PathVariable Test test
+            @PathVariable User user
+            ,@PathVariable Test test
             , Model model) {
 
         model.addAttribute("question", testService.addNewQuestionToTest(test, "Enter question"));
 
-        return "redirect:/test/" + test.getId();
+        return "redirect:/test/" + test.getId()+"/"+user.getId();
     }
 
     @GetMapping("deleteQuestion/{test}/{question}")

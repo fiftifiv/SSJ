@@ -18,20 +18,12 @@ public class MainController {
     private ArticleService articleService;
 
     @Autowired
-    private ArticleRepo articleRepo;
-
-    @Autowired
     private HandlerTextHTML handlerTextHTML;
 
-
     @GetMapping("/")
-    public String greeting(
-            @PathVariable(required = false) Article article
-            , Map<String, Object> model) {
+    public String greeting(Map<String, Object> model) {
 
-        Iterable<Article> articles = articleRepo.findAll();
-        model.put("articles", articles);
-
+        model.put("articles", articleService.findAllAtricle());
         model.put("article", handlerTextHTML.procesArticleText(articleService.getFirstArticleWithBD()));
 
         return "greeting";
@@ -39,11 +31,12 @@ public class MainController {
 
     @GetMapping("/main/{article}")
     public String greeting(@PathVariable Article article, Model model) {
+        model.addAttribute("articles", articleService.findAllAtricle());
         model.addAttribute("article", handlerTextHTML.procesArticleText(article));
-        model.addAttribute("articles", articleRepo.findAll());
 
         return "greeting";
     }
+
 
 
 

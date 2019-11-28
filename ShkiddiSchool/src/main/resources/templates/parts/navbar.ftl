@@ -21,9 +21,10 @@
 
                 <#else>
             </#if>
-
         </ul>
+
         <div class="navbar-text user-name">${name}</div>
+
         <@l.logout />
     </div>
 </nav>

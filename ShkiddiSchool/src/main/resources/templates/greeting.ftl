@@ -14,6 +14,7 @@
                             <div class="edit-block">
                                 <a href="/article/${article.getId()!}"><img src="/static/edit-pencil.svg" width="20px"
                                                                             height="20px" alt="edit"></a>
+
                                 <a href="/article/delete/${article.getId()!}"><img src="/static/edit-recycle_bin.svg"
                                                                                    width="20px" height="20px"
                                                                                    alt="delete"></a>
@@ -29,7 +30,7 @@
                     </#list>
                 </#if>
 
-                <#if isAdmin>
+`                <#if isAdmin>
                     <div class="edit-plus">
                         <li><a href="/article/add"><img src="/static/edit-plus.svg" width="20px" height="20px"
                                                         alt="add article"></a></li>

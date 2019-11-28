@@ -28,22 +28,10 @@ public class ArticleController {
 
     @Autowired
     ArticleService articleService;
-    @Autowired
-    PhotoArticleRepo paRepo;
-    @Autowired
-    HandlerTextHTML handlerTextHTML;
-    @Autowired
-    TestService testService;
-    @Autowired
-    ArticleRepo articleRepo;
-
-
-    @Value("${upload.path}")
-    private String uploadPath;
 
     @GetMapping
     public String getArticles(Model model) {
-        model.addAttribute("articles", articleService.getAllAtricle());
+        model.addAttribute("articles", articleService.findAllAtricle());
         return "articleList";
     }
 
@@ -60,49 +48,14 @@ public class ArticleController {
             Model model) {
 
         model.addAttribute("article", article);
-
-        if (file != null) {
-
-            File uploadDir = new File(uploadPath);
-
-            if (!uploadDir.exists()) {
-                uploadDir.mkdir();
-            }
-
-            String uuidFile = UUID.randomUUID().toString();
-            String resultFilename = uuidFile + "." + file.getOriginalFilename();
-
-
-            try {
-
-                file.transferTo(new File(uploadDir + "/" + resultFilename));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            PhotoArticle photoArticle = new PhotoArticle();
-            photoArticle.setName(resultFilename);
-            photoArticle.setNumber(article.getPhotoArticles().size() + 1);
-            article.getPhotoArticles().add(photoArticle);
-
-            paRepo.save(photoArticle);
-
-        }
+        articleService.addPhotoToArticle(article, file);
 
         return "articleEdit";
     }
 
     @GetMapping("add")
     public String addArticle(Model model) {
-        Test test = new Test();
-
-        Article article = new Article();
-        article.setTest(test);
-
-
-        testService.save(test);
-        model.addAttribute("article", articleService.saveArticle(article));
-
+        model.addAttribute("article", articleService.createNewArticleAndAddToDB());
         return "articleEdit";
     }
 
@@ -114,12 +67,8 @@ public class ArticleController {
 
     @GetMapping("update/{article}")
     public String updateArticle(@PathVariable Article article, @RequestParam("text") String text, @RequestParam("title") String title, Model model) {
-        article.setTitle(title);
-        article.setText(text);
-        articleService.saveArticle(article);
-
-        return "redirect:/main/"+ article.getId();
+        articleService.updateArticle(article, title, text);
+        return "redirect:/main/" + article.getId();
     }
-
 
 }

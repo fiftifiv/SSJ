@@ -17,7 +17,7 @@
                         </li>
                     </#list>
 
-                    <Li><a href="/test/addQuestion/${(test.getId())!}">Add new question</a>
+                    <Li><a href="/test/addQuestion/${(test.getId())!}/${currentUserId}">Add new question</a>
 
 
                     </li>
