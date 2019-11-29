@@ -16,8 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@Controller
-@RequestMapping("/test")
+@Controller @RequestMapping("/test")
 public class TestController {
 
     @Autowired

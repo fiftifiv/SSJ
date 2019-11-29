@@ -15,10 +15,15 @@ public class HandlerTextHTML extends HandlerTextImpl {
     String path;
 
     public Article procesArticleText(Article article) {
+
         if (article != null) {
+
             List<String> locatePhotos = findSubstringInString(article.getText(), "#\\d#");
+
             if (article.getPhotoArticles() != null) {
+
                 if (article.getPhotoArticles().size() > 0) {
+
                     article.getPhotoArticles().stream()
                             .forEach((photo) -> {
                                 Optional<String> opt = locatePhotos.stream()

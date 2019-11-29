@@ -1,6 +1,5 @@
 package com.shkiddi_school.service;
 
-import com.shkiddi_school.domain.Message;
 import com.shkiddi_school.domain.Role;
 import com.shkiddi_school.domain.User;
 import com.shkiddi_school.repos.UserRepo;
@@ -8,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -20,7 +20,8 @@ public class UserService implements UserDetailsService {
     private UserRepo userRepo;
     @Autowired
     private TestService testService;
-
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -37,6 +38,7 @@ public class UserService implements UserDetailsService {
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));
         user.setActivationCode(UUID.randomUUID().toString());
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepo.save(user);
 
         String message = String.format(
