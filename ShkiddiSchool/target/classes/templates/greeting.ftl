@@ -1,8 +1,7 @@
 <#import "parts/common.ftl" as c>
 <#include "parts/security.ftl">
 <@c.page>
-
-
+    <div class="global-div">
     <aside>
         <div class="articles">
                 <h4>Article list</h4>
@@ -35,21 +34,22 @@
         </div>
 
     </aside>
-    <main class="main-section">
-        <div class="article-title" align="CENTER">
-
-            <a href="/test/${(article.getTest().getId())!}/${currentUserId}">Test</a>
-
-            <h1>
+    <main>
+        <div class="div-of-main">
+        <section class="article">
+            <h1 class="article-title">
                 <span>${article.getTitle()!}</span>
             </h1>
-
-        </div>
-        <div>
-            <h4>${article.getText()!}</h4>
+            <div class="article-text">
+                <pre>${article.getText()!}</pre>
+            </div>
+        </section>
+            <section class="test" style="">
+                <a class="button-to-test" href= "/test/${(article.getTest().getId())!}/${currentUserId}">Get test ☺</a>
+            </section>
         </div>
     </main>
-
+    </div>
 
 
 </@c.page>

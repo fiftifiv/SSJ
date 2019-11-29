@@ -25,7 +25,7 @@ public class HandlerTextHTML extends HandlerTextImpl {
                                         .filter((locatePhoto) -> locatePhoto.contains(new Integer(photo.getNumber()).toString()))
                                         .findFirst();
                                 if (opt.isPresent()) {
-                                    article.setText(processText(article.getText(), opt.get(), "<div><img src=\"" + "/img/" + photo.getName() + "\" class=\"card-img\" ></div>"));
+                                    article.setText(processText(article.getText(), opt.get(), "<div><img src=\"" + "/img/" + photo.getName() + "\" class=\"article-image\" ></div>"));
                                 }
 
                             });
