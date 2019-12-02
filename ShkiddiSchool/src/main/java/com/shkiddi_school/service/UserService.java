@@ -22,10 +22,16 @@ public class UserService implements UserDetailsService {
     private TestService testService;
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Autowired
+    private MailSender mailSender;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepo.findByUsername(username);
+        User user = userRepo.findByUsername(username);
+        if (user == null) {
+            throw new UsernameNotFoundException("User not found");
+        }
+        return user;
     }
 
     public boolean addUser(User user) {
@@ -35,32 +41,33 @@ public class UserService implements UserDetailsService {
             return false;
         }
 
-        user.setActive(true);
+        user.setActive(false);
         user.setRoles(Collections.singleton(Role.USER));
         user.setActivationCode(UUID.randomUUID().toString());
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepo.save(user);
 
-        String message = String.format(
-                "Hello, %s \n" +
-                        "Welcome to Shkiddi.Java.School.\n" +
-                        "Please, visit next link: http://localhost8080/activate/%s", user.getUsername(), user.getActivationCode()
-        );
-
         if (!StringUtils.isEmpty(user.getEmail())) {
 
+            String message = String.format(
+                    "Hello, %s \n" +
+                            "Welcome to Shkiddi.Java.School.\n" +
+                            "Please, visit next link: http://localhost:8080/activate/%s", user.getUsername(), user.getActivationCode()
+            );
+
+            mailSender.send(user.getEmail(), "Activetion code", message);
         }
         return true;
     }
 
     public boolean activateUser(String code) {
         User user = userRepo.findByActivationCode(code);
-
-        if (user == null) {
+        user.setPassword2(user.getPassword());
+        if (user == null || user.isActive()) {
             return false;
         }
 
-        user.setActivationCode(null);
+        user.setActive(true);
         userRepo.save(user);
         return true;
     }
