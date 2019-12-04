@@ -42,28 +42,28 @@
         </div>
 
     </aside>
-    <main>
-        <div class="div-of-main">
-        <section class="article">
-            <h1 class="article-title">
+    <main class="main-section">
+        <div class="article">
             <#if article??>
-            <a href="/test/${(article.getTest().getId())!}/${currentUserId}">Test</a>
-            </h1>
             <h1>
                 <span>${article.getTitle()!}</span>
             </h1>
+            <div class="article-main">
             <div class="article-text">
-                <pre>${article.getText()!}</pre>
+                <pre class="main-text">${article.getText()!}
+            <div class="wrapper-test">
+<#--            <section class="test" style="">-->
+                <button class="test-result" type="submit" style="width: 100%"><a class="button-to-test" href= "/test/${(article.getTest().getId())!}/${currentUserId}">Get test</a></button>
+
+<#--            </section>-->
             </div>
-        </section>
-            <section class="test" style="">
-                <a class="button-to-test" href= "/test/${(article.getTest().getId())!}/${currentUserId}">Get test ☺</a>
-            </section>
+                </pre>
+            </div>
+
+            </div>
         </div>
         </#if>
 
     </main>
     </div>
-
-
 </@c.page>

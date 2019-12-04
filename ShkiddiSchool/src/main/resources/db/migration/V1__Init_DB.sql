@@ -8,7 +8,7 @@ create table answer
 create table article
 (
     id      bigint not null,
-    text    varchar(50000),
+    text    varchar(255),
     title   varchar(255),
     test_id integer,
     primary key (id)

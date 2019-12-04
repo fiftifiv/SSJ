@@ -7,17 +7,25 @@
         <#if isAdmin>
 
             <div class="articles">
-                <ul class="list-of-articles">
+                <ul class="list-of-articles list-of-tests">
 
                     <#list test.getQuestions()! as question >
-                        <li>
+                        <li class="test-item">
                             <a href="">${question.getQuestion()}</a>
-                            <a href="/test/editQuestion/${question.getId()}/${test.getId()}">Edit</a>
-                            <a href="/test/deleteQuestion/${test.getId()!}/${question.getId()!}/${currentUserId}">Delete</a>
-                        </li>
-                    </#list>
+                            <div class="edit-block" <#--style="position: relative"-->>
+                                <a href="/test/editQuestion/${question.getId()}/${test.getId()}"><img src="/static/edit-pencil.svg" width="20px"
+                                                                height="20px" alt="edit"></a>
 
-                    <Li><a href="/test/addQuestion/${(test.getId())!}/${currentUserId}">Add new question</a>
+                                <a href="/test/deleteQuestion/${test.getId()!}/${question.getId()!}/${currentUserId}"><img src="/static/edit-recycle_bin.svg"
+                                                                       width="20px" height="20px"
+                                                                       alt="delete"></a>
+                            </div>
+                    </#list>
+                        </li>
+                    <div class="edit-plus">
+                        <li><a href="/test/addQuestion/${(test.getId())!}/${currentUserId}"><img src="/static/edit-plus.svg" width="20px" height="20px"
+                                                        alt="add article"></a></li>
+                    </div>
 
 
                     </li>
@@ -31,28 +39,30 @@
 
 
     <#if progres.isPresent()>
-        <h1>Ваш самый лучшый результат теста на ${progres.get().getTestCompletionRate()}%</h1>
+        <h1 class="test-user-text">Your best result is ${progres.get().getTestCompletionRate()}%</h1>
     <#else>
-        <h1>Успехов в здаче теста</h1>
+        <h1 class="test-user-text">Good luck!</h1>
     </#if>
-
-    <form action="/test/result/${test.getId()}/${currentUserId}">
+    <main class="main-section">
+        <div class="tests">
+    <form class="" action="/test/result/${test.getId()}/${currentUserId}">
         <if test.getQuestions()??>
             <#list test.getQuestions()! as question>
-
-                <h4>${question.getQuestion()!}</h4>
-
+                <div class="question">
+                <span class="question-name">${question.getQuestion()!}</span>
                 <#if question??>
                     <#list question.getShuffleAnswers()! as key,value>
-                        <label><input type="checkbox" name="${value?string('right' , 'noright')}">${key!}</label>
+                        <div class="label-with-checkbox">
+                        <label class="label-with-checkbox"><input type="radio" name="${value?string('right' , 'noright')}">${key!}</label>
+                        </div>
                     </#list>
                 </#if>
-
-
+                </div>
             </#list>
 
         </if>
-
-        <button type="submit">Result</button>
+        <button class="test-result" type="submit">Result</button></br>
     </form>
+        </div>
+    </main>
 </@c.page>

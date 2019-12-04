@@ -1,7 +1,55 @@
+
 html{
     height: 100%;
     width: 100%;
 }
+body{
+    height: 100%;
+    background-color: #f1f1f1;
+}
+div.politic{
+    padding-top: 1rem;
+}
+div.user-name:hover{
+    color: #4b4b4b;
+}
+footer div.politic a{
+    color: #6db33f;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 0 17px;
+}
+
+footer div.politic a:hover{
+    color: #cccccc;
+    text-decoration: none;
+}
+
+footer div.navbar a{
+    color: #eee;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 0 17px;
+}
+
+
+footer div.navbar a:hover{
+    color: #6db33f;
+    text-decoration: none;
+}
+div.span12 *{
+    color: #eee;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+
 a{
     text-transform: uppercase;
     text-decoration: none;
@@ -26,7 +74,7 @@ nav a{
     text-shadow: none;
     font-size: 1.25rem;
     line-height: 14px;
-    padding: 28px 28px;
+    padding: 40px 28px 50px 28px;
     font-weight: 700;
     color: #6db33f;
     border-radius: 0 0 15% 15%;
@@ -49,16 +97,15 @@ section{
 section.article{
     border-top: #6db33f 1px solid;
 }
-
-.article pre{
-    padding: 3rem 0;
+h1{
+    text-align: center;
 }
 .article-text{
     margin: 0rem 3rem 2rem;
     font-size: 1.5rem;
 }
-.article-title{
-    text-align: center;
+pre.main-text{
+    padding-left: 3rem;
 }
 .article-text pre div{
     text-align: center;
@@ -80,18 +127,28 @@ section.test{
     font-size: 2.5rem;
     color: #6db33f;
     height: 3rem;
-    width: 65%;
+    width: 95%;
     display: flex;
     justify-content: center; /*Центрирование по горизонтали*/
     align-items: center;
     border-radius: 10rem;
-    margin-left: 2rem;
+}
+section.test a{
+    width: 95%;
+}
+section.test:hover{
+    background-color: #444343
+}
+div.wrapper-test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a.button-to-test{
     color: #6db33f;
 }
 a.button-to-test:hover{
-    color: #1dff00;
+    color: chartreuse;
     text-decoration: none;
 }
 aside{
@@ -100,7 +157,7 @@ aside{
     width: 25%;
 }
 footer{
-    height: 5rem;
+    height: 7rem;
     font-size: 1.1rem;
     color: aliceblue;
     background-color: #34302d;
@@ -124,10 +181,6 @@ img.logo{
 nav a.name-of-project:hover{
     background-color: transparent;
     color: #cccccc;
-}
-body{
-    height: 100%;
-    background-color: #f1f1f1;
 }
 footer{
     clear:both;
@@ -182,14 +235,27 @@ div.edit-plus{
     background-color: #f7f5f3;
     border: 1px solid #c7c3c0;
 }
-.user-name{
-    padding: 5px;
+
+div.user-name input{
+    width: 18rem;
 }
-.user-password{
-    padding: 5px;
+div.user-password input{
+    width: 18rem;
+}
+div.user-email input{
+    width: 18rem;
+}
+.user-name{
+    padding: 28px;
+    margin-right: 1rem;
 }
 .user-email{
-    padding: 5px;
+    padding: 28px;
+    margin-right: 1rem;
+}
+.user-password{
+    padding: 28px;
+    margin-right: 1rem;
 }
 .btn-signin{
     padding: 5px;
@@ -197,7 +263,6 @@ div.edit-plus{
     line-height: 1.65;
     border-radius: 20px;
     color: #ffffff;
-    background-color: #00a6fd;
     display: inline-block;
     margin-bottom: 0;
     font-weight: 600;
@@ -208,6 +273,70 @@ div.edit-plus{
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
+}
+button.btn-signin{
+    background-color: #52ff56;
+    width: 100%;
+}
+button.btn-signin:hover{
+    color: #4b4b4b;
+}
+div.btn-signin{
+    background-color: #38ff48;
+    width: 90%;
+}
+div.btn-signin:hover{
+    background-color: #52ff56;
+}
+div.btn-signin-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+div.btn-register{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+}
+div.login-panel {
+    border: #cccccc 1px solid;
+    border-radius: 20px;
+}
+div.login-panel input{
+    border-radius: 50px;
+}
+div.login-panel input:hover{
+    background-color: #cccccc;
+}
+
+div.user-email label{
+    text-decoration: none;
+    background-color: transparent;
+    text-shadow: none;
+    font-size: 0.8rem;
+    line-height: 14px;
+    font-weight: 700;
+    color: #444343;
+}
+div.login-panel label.login-label{
+    text-decoration: none;
+    background-color: transparent;
+    text-shadow: none;
+    font-size: 0.8rem;
+    line-height: 14px;
+    font-weight: 700;
+    color: #444343;
+}
+div.btn-register a{
+    text-transform: none;
+    text-decoration: none;
+}
+div.btn-register a:hover{
+    color: chartreuse;
 }
 .parent-login-form{
     width: 100%;
@@ -220,4 +349,184 @@ div.edit-plus{
     align-content: center;
     justify-content: center;
     overflow: auto;
+}
+.list-of-users-item{
+    display: flex;
+    overflow: auto;
+    padding: 0 1.5rem 3rem 2rem;
+}
+.list-of-users{
+    margin: 0.7rem 2rem 1rem 2rem;
+    border: #444343 7px ridge;
+}
+.list-of-users h1{
+    color: #444343;
+    text-align: center;
+}
+.list-of-users-item div.user-text{
+    width: 15%;
+}
+.list-of-users-item div.progress-test{
+    border-radius: 20px;
+    width: 40rem;
+    background-color: #e0dede;
+}
+.progress-bar{
+    width: 90% ;
+    border-radius: 30px;
+}
+.progress-bar-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.edit-block-wrapper{
+    position: relative;
+    margin-left: 10rem;
+}
+.test-result{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #444343 0%, #6db33f 51%, #444343 100%);
+    background-size: 200% auto;
+    transition: .5s;
+}
+.test-result:hover{
+    background-position: right center;
+}
+.question{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+li.test-item{
+    padding: 1.5rem 1rem;
+    position: relative;
+}
+div.tests{
+    overflow: auto;
+}
+.question-name{
+    font-size: 1.5rem;
+}
+.btn-inout{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 5px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #444343 0%, #6db33f 51%, #444343 100%);
+    background-size: 200% auto;
+    transition: .5s;
+}
+.user-name{
+    color: #cccccc;
+    margin-right: 1rem;
+}
+div.container-fluid{
+    padding-top: 2rem;
+}
+button.get-test{
+    width: 100%;
+}
+div.user-name{
+    background-color: transparent;
+    text-shadow: none;
+    font-size: 1.25rem;
+    line-height: 14px;
+    padding: 28px 28px;
+    font-weight: 700;
+    border-radius: 0 0 15% 15%;
+}
+form.question-edit{
+    padding: 1.5rem 0 2rem 0;
+    color: #4b4b4b;
+}
+form.question-edit *{
+    margin-bottom: 1rem;
+}
+form.question-edit input{
+    text-shadow: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #6db33f;
+    border-radius: 0 0 30% 30%;
+}
+.question-answer{
+    margin-right: 1.5rem;
+}
+form.question-edit a{
+    text-decoration: none;
+}
+form.question-edit a:hover{
+    color: #444343;
+}
+form.question-edit button{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #52ff56;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6db33f;
+    transition: .2s ease-in-out;
+}
+form.question-edit button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+form.question-edit button:hover {
+    background: #34302d;
+    color: #fff;
+}
+form.question-edit button:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+}
+form.question-edit a.add{
+    margin: 1.5rem;
+}
+h1.test-user-text{
+    padding-top: 1rem;
+    color: #6db33f;
+}
+dialog{
+    background-color: transparent;
+    border: none;
+    opacity: 0.5;
+}
+dialog::backdrop {
+    background: linear-gradient(to bottom, blue 50%, yellow 50%);
+}
+dialog{
+    position: fixed;
+}
+dialog p{
+    font-size: 10rem;
+}
+dialog p:hover{
+    color: #81003f;
 }
