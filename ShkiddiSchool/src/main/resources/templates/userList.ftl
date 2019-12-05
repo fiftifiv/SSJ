@@ -14,7 +14,7 @@
                 <div class="progress-test">
                     <h4>Progress test</h4>
                     <div class="progress-bar-wrapper">
-                         <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">${usersService.userProgresTest(user)}%</div>
+                         <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width:${usersService.userProgresTest(user)}%; color: #50000e; font-size: 1.1rem; font-weight: bolder" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">${usersService.userProgresTest(user)}%</div>
                     </div>
                 </div>
             <div class="edit-block-wrapper">

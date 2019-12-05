@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3b2e18e5-4acf-44cf-9608-1e4e71df9041" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/static/ukraine.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/static/ukraine.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/common.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/parts/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/src/main/resources/templates/userList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ShkiddiSchool/target/classes/templates/userList.ftl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
