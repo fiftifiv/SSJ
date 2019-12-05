@@ -2,7 +2,5 @@
 <#import "parts/login.ftl" as l>
 
 <@c.page>
-    Add new user
-    ${message!"No message!"}
     <@l.login "/registration" true />
 </@c.page>
