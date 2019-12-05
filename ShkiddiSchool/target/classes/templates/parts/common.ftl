@@ -11,11 +11,7 @@
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
               crossorigin="anonymous">
         <link rel="stylesheet" href="/static/style.css">
-<<<<<<< HEAD
-
-=======
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
->>>>>>> origin
     </head>
     <body>
     <#include "navbar.ftl" />

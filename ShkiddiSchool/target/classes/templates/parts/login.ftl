@@ -1,32 +1,11 @@
 <#macro login path isRegiserForm>
     <div class="parent-login-form">
-<<<<<<< HEAD
-    <form class="login-form" action="${path}" method="post">
-        <div class="login-panel">
-        <div class="user-name">
-            <label class="label-username login-label"> User Name :</label>
-            <div class="input-username">
-                <input type="text" name="username"/>
-            </div>
-        </div>
-
-        <div class="form-group user-password">
-            <label class="label-userpassword login-label"> Password :</label>
-            <div class="input-password">
-                <input type="password" name="password"/>
-            </div>
-        </div>
-        <#if isRegiserForm>
-            <div class="form-group user-email">
-                <label class=""> Email :</label>
-                <div class="input-email">
-                    <input type="email" name="email" class="form-control" placeholder="some@some.com"/>
-=======
+<#--        <#if isRegiserForm>-->
         <form class="login-form" action="${path}" method="post">
             <div class="login-panel">
                 <div class="user-name">
-                    <label class=""> User Name :</label>
-                    <div class="">
+                    <label class="label-username login-label"> User Name :</label>
+                    <div class="input-username">
                         <input type="text"
                                name="username"
                                class="form-control ${(usernameError??)?string('is-invalid','')}"
@@ -42,34 +21,19 @@
                 </div>
 
                 <div class="form-group user-password">
-                    <div class="">
-                        <label class=""> Password :</label>
+                        <label class="label-userpassword login-label"> Password :</label>
+                        <div class="input-password">
                         <input type="password" name="password"
                                class="form-control ${(passwordError??)?string('is-invalid','')}"
                                placeholder="Password"/>
+                        </div>
                         <#if passwordError??>
                             <div class="invalid-feedback ">
                                 ${passwordError}
                             </div>
                         </#if>
-                    </div>
->>>>>>> origin
                 </div>
-
-<<<<<<< HEAD
-        <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-            <div class="btn-signin-wrapper">
-            <div class="btn-signin">
-            <button class="btn-signin" type="submit">
-                <#if isRegiserForm>Create<#else>Sing in</#if>
-            </button>
-            </div>
-            </div>
-            <div class="btn-register">
-        <#if !isRegiserForm> <a href="/registration">Register</a></#if>
-            </div>
-=======
-
+                
                 <#if isRegiserForm>
 
                     <div class="form-group user-password">
@@ -88,7 +52,7 @@
 
                     <div class="form-group user-email">
                         <label class=""> Email :</label>
-                        <div class="">
+                        <div class="input-email">
                             <input type="email"
                                    name="email"
                                    class="form-control ${(emailError??)?string('is-invalid','')}"
@@ -117,12 +81,14 @@
                 </#if>
 
                 <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-
+                <div class="btn-signin-wrapper">
+                    <div class="btn-signin">
                 <button class="btn-signin" type="submit"><#if isRegiserForm>Create<#else>Sing in</#if></button>
-                <div>
+                    </div>
+                </div>
+                <div class="btn-register">
                     <#if !isRegiserForm> <a href="/registration">Add new user</a></#if>
                 </div>
->>>>>>> origin
             </div>
         </form>
     </div>
